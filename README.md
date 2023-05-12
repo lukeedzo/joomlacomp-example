@@ -1,7 +1,8 @@
-## Soon
+## Example joomla component
 
+This Joomla component demonstrates best practices in component development by following the MVC architecture, utilizing Joomla's APIs and libraries, and offering additional functionality through a web services plugin and a module for displaying selected data. Its modularity, compatibility, and comprehensive documentation contribute to a user-friendly and extensible solution for Joomla-based websites.
 
-## Best practices for Joomla component development
+### Best practices for Joomla component development
 
 - Plan your component: Before you start writing code, spend time planning your component. Define the requirements, create a detailed specification document, and decide on the features and functionalities that you need to include.
 
