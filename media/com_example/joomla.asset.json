@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "com_example",
+  "version": "CVS: 1.0.0",
+  "license": "",
+  "assets": [
+    {
+      "name": "com_example.admin",
+      "type": "style",
+      "uri": "com_example/admin.css"
+    },
+    {
+      "name": "com_example.admin",
+      "type": "script",
+      "uri": "com_example/admin.js",
+      "dependencies": [
+        "jquery"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+        "name": "com_example.list",
+        "type": "style",
+        "uri": "com_example/list.css"
+    }
+  ]
+}

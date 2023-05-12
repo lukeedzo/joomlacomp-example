@@ -1,0 +1,57 @@
+on: 
+  push:
+   branches:
+      - '*'
+      - '!dev'
+name: 🚀 Build, deploy and linting joomla component
+jobs:
+  lint:
+    name: Lint PHP Files
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: 7.4
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y php7.4-xml
+
+    - name: Lint PHP files
+      run: |
+        find . -name "*.php" -not -path "./vendor/*" -print0 | xargs -0 -P4 php -l
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: 🔨 Build Component
+        run: |
+          npm install
+          npm run build-package
+        working-directory: ./components/com_example/build/  
+      - name: List output files
+        run: find ./components/com_example/build/pkg/ -print
+      - name: List local directory contents
+        run: ls ./components/com_example/build/package/
+      - name: 📂 Sync Component files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.SERVER_NAME }}
+          username: ${{ secrets.SERVER_USER }}
+          password: ${{ secrets.SERVER_PASS }}
+          local-dir: ./components/com_example/build/package/
+          server-dir: public_html/updates/joomla/com_example/

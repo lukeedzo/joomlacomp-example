@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" method="upgrade" client="site">
+    <name>MOD_EXAMPLE_NAME</name>
+    <creationDate>2023-04-28</creationDate>
+    <copyright>2023 Lukeedzo</copyright>
+    <license></license>
+    <author>Lukeedzo</author>
+    <authorEmail>lukasplycneris@protonmail.com</authorEmail>
+    <authorUrl>https://plycneris.com/</authorUrl>
+    <version>CVS: 1.0.0</version>
+    <description>MOD_EXAMPLE_DESCRIPTION</description>
+    <namespace path="src">Example\Module\Example</namespace>
+    <files>
+        <filename module="mod_example">mod_example.php</filename>
+        <filename>index.html</filename>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+    <media destination="mod_example" folder="media">
+        <folder>css</folder>
+        <folder>js</folder>
+        <filename>joomla.asset.json</filename>
+    </media>
+    <languages folder="language">
+			<language tag="en-GB">en-GB/mod_example.ini</language>
+			<language tag="en-GB">en-GB/mod_example.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="content_type" 
+								label="MOD_EXAMPLE_CONTENT_TYPE_TAB_LBL"
+                description="MOD_EXAMPLE_CONTENT_TYPE_TAB_DESC">
+                <field
+                    name="content_type" type="list"
+                    label="MOD_EXAMPLE_CONTENT_TYPE_LBL"
+                    description="MOD_EXAMPLE_CONTENT_TYPE_DESC">
+                    <option value="blank">MOD_EXAMPLE_CUSTOM_CONTENT</option>
+                    <option value="list">MOD_EXAMPLE_LIST</option>
+                    <option value="item">MOD_EXAMPLE_ITEM</option>
+                </field>
+            </fieldset>
+            <fieldset 
+                name="blank_content" 
+                label="MOD_EXAMPLE_CUSTOM_CONTENT_TAB_LBL"
+                description="MOD_EXAMPLE_CUSTOM_CONTENT_TAB_DESC">
+                <field 	
+                    name="html_content" type="editor" filter="safehtml"
+                    label="MOD_EXAMPLE_HTML_LBL"
+                    description="MOD_EXAMPLE_HTML_DESC" />
+            </fieldset>
+            <fieldset 
+                name="list_content" 
+                label="MOD_EXAMPLE_LIST_CONTENT_TAB_LBL"
+                description="MOD_EXAMPLE_LIST_CONTENT_TAB_DESC">
+                <field
+                    name="table" type="list"
+                    label="MOD_EXAMPLE_TABLE_LBL"
+                    description="MOD_EXAMPLE_TABLE_DESC">
+								<option value="#__example_items">#__example_items</option>
+								<option value="#__example_categories">#__example_categories</option>
+                </field>
+                <field 
+                    name="field" type="groupedlist" default=""
+                    label="MOD_EXAMPLE_FIELD_LBL"
+                    description="MOD_EXAMPLE_FIELD_DESC">
+								<group label="#__example_items">
+									<option value="#__example_items:id">id</option>
+									<option value="#__example_items:created_by">created_by</option>
+									<option value="#__example_items:modified_by">modified_by</option>
+									<option value="#__example_items:title">title</option>
+									<option value="#__example_items:description">description</option>
+									<option value="#__example_items:category">category</option>
+								</group>
+								<group label="#__example_categories">
+									<option value="#__example_categories:id">id</option>
+									<option value="#__example_categories:created_by">created_by</option>
+									<option value="#__example_categories:modified_by">modified_by</option>
+									<option value="#__example_categories:name">name</option>
+								</group>
+                </field>
+                <field 
+                    name="offset" type="text" default="0" filter="uint" class="input-small"
+                    label="MOD_EXAMPLE_OFFSET_LBL"
+                    description="MOD_EXAMPLE_OFFSET_DESC" />
+                <field 
+                    name="limit" type="text" default="10" filter="uint" class="input-small"
+                    label="MOD_EXAMPLE_LIMIT_LBL"
+                    description="MOD_EXAMPLE_LIMIT_DESC" />
+            </fieldset>
+            <fieldset 
+                name="item_content" 
+                label="MOD_EXAMPLE_ITEM_CONTENT_TAB"
+                description="MOD_EXAMPLE_ITEM_CONTENT_TAB_DESC">
+                <field
+                    name="item_table" type="list"
+                    label="MOD_EXAMPLE_TABLE_LBL"
+                    description="MOD_EXAMPLE_TABLE_DESC">	
+								<option value="#__example_items">#__example_items</option>
+								<option value="#__example_categories">#__example_categories</option>
+                </field>
+                <field 
+                    name="item_id" type="text" filter="uint" class="input-small"
+                    label="MOD_EXAMPLE_ITEM_ID_LBL"
+                    description="MOD_EXAMPLE_ITEM_ID_DESC"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

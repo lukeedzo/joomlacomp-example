@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="4.0" method="upgrade">
+    <name>com_example</name>
+    <creationDate>2023-04-28</creationDate>
+    <copyright>2023 Lukeedzo</copyright>
+    <license></license>
+    <author>Lukeedzo</author>
+    <authorEmail>lukasplycneris@protonmail.com</authorEmail>
+    <authorUrl>https://plycneris.com/</authorUrl>
+    <version>CVS: 1.0.0</version>
+    <description>COM_EXAMPLE_XML_DESCRIPTION</description>
+    <namespace path="src">Example\Component\Example</namespace>
+    <scriptfile>script.php</scriptfile>
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <update> <!-- Runs on update -->
+        <schemas>
+            <schemapath type="mysql">sql/updates</schemapath>
+        </schemas>
+    </update>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <api>
+			<files folder="webservices">
+				<folder>src</folder>
+			</files>
+		</api>
+    <files folder="site">
+        <folder>src</folder>
+        <folder>forms</folder>
+        <folder>tmpl</folder>
+    </files>
+    <media destination="com_example" folder="media">
+        <folder>css</folder>
+        <folder>js</folder>
+        <filename>joomla.asset.json</filename>
+    </media>
+    <languages folder="site/languages">
+			<language tag="en-GB">en-GB/com_example.ini</language>
+    </languages>
+    <administration>
+        <menu>COM_EXAMPLE</menu>
+        <submenu>
+					<menu link="option=com_example&amp;view=exampleitems" view="exampleitems" alt="Example/Exampleitems">COM_EXAMPLE_TITLE_ITEMS</menu>
+					<menu link="option=com_example&amp;view=categories" view="categories" alt="Example/Categories">COM_EXAMPLE_TITLE_CATEGORIES</menu>
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <folder>forms</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+            <folder>services</folder>
+            <folder>presets</folder>
+            <folder>sql</folder>
+        </files>
+        <languages folder="administrator/languages">
+			<language tag="en-GB">en-GB/com_example.ini</language>
+			<language tag="en-GB">en-GB/com_example.sys.ini</language>
+        </languages>
+    </administration>
+    <config>
+        <fields name="params">
+            <fieldset name="component">
+                <field name="save_history" default="0" />
+            </fieldset>
+        </fields>
+    </config>
+    <plugins>
+		<plugin group="finder" plugin="exampleitems"/>
+		<plugin group="webservices" plugin="example"/>
+		<plugin group="webservices" plugin="example"/>
+    </plugins>
+    <modules>
+		<module module="mod_example" />
+	</modules>
+    <updateservers>
+        <server type="extension" priority="1" name="com_example">https://plycneris.com/updates/joomla/com_example/updates.xml</server>
+    </updateservers>
+</extension>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="plugin" group="webservices">
+    <name>plg_webservices_example</name>
+    <author>Lukeedzo</author>
+    <creationDate>2023-04-28</creationDate>
+    <copyright>2023 Lukeedzo</copyright>
+    <license></license>
+    <authorEmail>lukasplycneris@protonmail.com</authorEmail>
+    <authorUrl>https://plycneris.com/</authorUrl>
+    <version>CVS: 1.0.0</version>
+    <description>PLG_PRIVACY_COM_EXAMPLE_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="example">example.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <languages folder="languages">  
+			<language tag="en-GB">en-GB/plg_webservices_example.ini</language>
+			<language tag="en-GB">en-GB/plg_webservices_example.sys.ini</language>
+    </languages>
+    <config>
+    </config>
+</extension>

@@ -1,0 +1,24 @@
+<updates>
+	<update>
+		<name>Example Component</name>
+		<description>Example Component update</description>
+		<element>com_example</element>
+		<type>component</type>
+		<version>1.0.0</version>
+		<client>administrator</client>
+		<infourl title="Example Component update">
+				<![CDATA[ Example Component update ]]>
+		</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">
+				<![CDATA[ https://plycneris.com/updates/joomla/com_example/com_example-1.0.0.zip ]]>
+			</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<targetplatform name="joomla" version="((3\.(12|11|10|9))|(4\.(0|1|2|3|4|5)))"/>
+		<maintainer>Lukas Plycneris</maintainer>
+		<maintainerurl>https://plycneris.com/</maintainerurl>
+	</update>
+</updates>
