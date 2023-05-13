@@ -82,7 +82,7 @@ run.task('plugin-webservices-language-gb', () => {
       path.join(__dirname, config.package.plugin_webservices_language_gb_ini_src),
 			path.join(__dirname, config.package.plugin_webservices_language_gb_sys_src),
     ])
-    .pipe(run.dest(config.package.config.package.plugin_webservices_language_gb_dest));
+    .pipe(run.dest(config.package.plugin_webservices_language_gb_dest));
 });
 
 run.task('plugin-finder-language-gb', () => {
@@ -91,7 +91,7 @@ run.task('plugin-finder-language-gb', () => {
 			path.join(__dirname, config.package.plugin_finder_language_gb_ini_src),
 			path.join(__dirname, config.package.plugin_finder_language_gb_sys_src)
     ])
-    .pipe(run.dest(config.package.config.package.plugin_finder_language_gb_dest));
+    .pipe(run.dest(config.package.plugin_finder_language_gb_dest));
 });
 
 run.task('site-language-gb', () => {
