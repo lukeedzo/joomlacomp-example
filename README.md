@@ -19,7 +19,7 @@ This Joomla component demonstrates best practices in component development by fo
 
 ## Installation
 
-1. Download the latest version of the component from the [com_example-1.0.0.zip](https://plycneris.com/updates/joomla/com_example/com_example-1.0.0.zip) page.
+1. Download the latest version of the component - [com_example-1.0.0.zip](https://plycneris.com/updates/joomla/com_example/com_example-1.0.0.zip).
 2. Log in to your Joomla administration panel.
 3. Go to the "Extensions" tab and select "Manage" from the dropdown menu.
 4. Click on the "Install" tab.
