@@ -34,6 +34,10 @@ administrator/language/*
 administrator/language/en-GB/*
 !administrator/language/en-GB/com_example.ini
 !administrator/language/en-GB/com_example.sys.ini
+!administrator/language/en-GB/plg_finder_exampleitems.ini
+!administrator/language/en-GB/plg_finder_exampleitems.sys.ini
+!administrator/language/en-GB/plg_webservices_example.ini
+!administrator/language/en-GB/plg_webservices_example.sys.ini
 
 ### site ###
 !components/
