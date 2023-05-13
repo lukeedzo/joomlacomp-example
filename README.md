@@ -8,7 +8,7 @@ This Joomla component demonstrates best practices in component development by fo
 
 - MVC architecture
 - Utilization of Joomla's APIs and libraries
-- Web services plugin for additional functionality
+- Web services plugin
 - Module for displaying selected data
 - User-friendly and extensible solution
 - Comprehensive documentation
