@@ -32,6 +32,8 @@ run.task('build-package', (cb) => {
     'administrator-language-gb',
     'site-language-gb',
 		'module-language-gb',
+		'plugin-webservices-language-gb',
+		'plugin-finder-language-gb',
     'installer-script',
     'indexhtml-file',
     'updates-file',
