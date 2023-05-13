@@ -44,6 +44,10 @@ module.exports = {
 		module_src: './../../../modules/mod_example/**/*.*',
 		module_dest: './pkg/modules/mod_example/',
 
+		module_language_gb_ini_src: './../../../../language/en-GB/com_example.ini',
+		module_language_gb_sys_src: './../../../../language/en-GB/com_example.sys.ini',
+		module_language_gb_dest: './pkg/modules/mod_example/languages/en-GB/',
+
 		html_file:'./../../../../components/com_example/build/index.html',
 		
     script_file_src:

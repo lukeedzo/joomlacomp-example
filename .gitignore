@@ -33,7 +33,7 @@ administrator/language/*
 !administrator/language/en-GB/
 administrator/language/en-GB/*
 !administrator/language/en-GB/com_example.ini
-!administrator/language/en-GB/com_examples.sys.ini
+!administrator/language/en-GB/com_example.sys.ini
 
 ### site ###
 !components/
@@ -55,6 +55,14 @@ language/*
 !language/en-GB/
 language/en-GB/*
 !language/en-GB/com_example.ini
+
+### module language ###
+!language/
+language/*
+!language/en-GB/
+language/en-GB/*
+!language/en-GB/mod_example.ini
+!language/en-GB/mod_example.sys.ini
 
 ### api ###
 !api/

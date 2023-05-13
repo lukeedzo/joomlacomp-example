@@ -31,6 +31,7 @@ run.task('build-package', (cb) => {
     'media',
     'administrator-language-gb',
     'site-language-gb',
+		'module-language-gb',
     'installer-script',
     'indexhtml-file',
     'updates-file',
