@@ -61,9 +61,19 @@ run.task('media', () => {
 run.task('administrator-language-gb', () => {
   return run
     .src([
-      path.join(__dirname, config.package.admin_language_gb_ini_src)
+      path.join(__dirname, config.package.admin_language_gb_ini_src),
+			path.join(__dirname, config.package.admin_language_gb_sys_src)
     ])
     .pipe(run.dest(config.package.admin_language_gb_dest));
+});
+
+run.task('module-language-gb', () => {
+  return run
+    .src([
+      path.join(__dirname, config.package.module_language_gb_ini_src),
+			path.join(__dirname, config.package.module_language_gb_sys_src)
+    ])
+    .pipe(run.dest(config.package.module_language_dest));
 });
 
 run.task('site-language-gb', () => {

@@ -7,7 +7,7 @@
     <license></license>
     <authorEmail>lukasplycneris@protonmail.com</authorEmail>
     <authorUrl>https://plycneris.com/</authorUrl>
-    <version>CVS: 1.0.0</version>
+    <version>1.0.0</version>
     <description>PLG_PRIVACY_COM_EXAMPLE_XML_DESCRIPTION</description>
     <files>
         <filename plugin="example">example.php</filename>
