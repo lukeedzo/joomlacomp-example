@@ -33,10 +33,10 @@ module.exports = {
     media_dest: './pkg/media/',
 
 		finder_plugin_src: './../../../plugins/finder/exampleitems/**/*.*',
-		finder_plugin_dest: './pkg/plugins/finder/',
+		finder_plugin_dest: './pkg/plugins/finder/exampleitems/',
 
 		webservices_plugin_src: './../../../plugins/webservices/example/**/*.*',
-		webservices_plugin_dest: './pkg/plugins/webservices/',
+		webservices_plugin_dest: './pkg/plugins/webservices/example/',
 
 		api_src: './../../../api/components/com_example/**/*.*', 
 		api_dest: './pkg/webservices/',
