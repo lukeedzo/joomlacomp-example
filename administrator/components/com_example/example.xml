@@ -75,7 +75,6 @@
     <plugins>
 		<plugin group="finder" plugin="exampleitems"/>
 		<plugin group="webservices" plugin="example"/>
-		<plugin group="webservices" plugin="example"/>
     </plugins>
     <modules>
 		<module module="mod_example" />
