@@ -1,6 +1,35 @@
-## Example joomla component
+# Example Joomla Component
+
+[![Joomla](https://img.shields.io/badge/Joomla-4.x-orange.svg)](https://www.joomla.org/)
 
 This Joomla component demonstrates best practices in component development by following the MVC architecture, utilizing Joomla's APIs and libraries, and offering additional functionality through a web services plugin and a module for displaying selected data. Its modularity, compatibility, and comprehensive documentation contribute to a user-friendly and extensible solution for Joomla-based websites.
+
+## Features
+
+- MVC architecture
+- Utilization of Joomla's APIs and libraries
+- Web services plugin for additional functionality
+- Module for displaying selected data
+- User-friendly and extensible solution
+- Comprehensive documentation
+
+## Requirements
+
+- Joomla 4.x
+
+## Installation
+
+1. Download the latest version of the component from the [com_example-1.0.0.zip](https://plycneris.com/updates/joomla/com_example/com_example-1.0.0.zip) page.
+2. Log in to your Joomla administration panel.
+3. Go to the "Extensions" tab and select "Manage" from the dropdown menu.
+4. Click on the "Install" tab.
+5. Choose the component ZIP file you downloaded and click "Upload & Install".
+6. Once the installation is complete, go to the "Components" tab and select the component from the list.
+7. Follow the on-screen instructions to configure and use the component.
+
+## License
+
+This Joomla component is open-source software licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ### Best practices for Joomla component development
 
