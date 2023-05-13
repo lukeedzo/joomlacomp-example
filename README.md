@@ -11,7 +11,7 @@ This Joomla component demonstrates best practices in component development by fo
 - Web services plugin
 - Module for displaying selected data
 - User-friendly and extensible solution
-- Comprehensive documentation
+- Detailed code documentation
 
 ## Requirements
 
