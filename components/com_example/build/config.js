@@ -61,7 +61,7 @@ module.exports = {
 
 		module_language_gb_ini_src: './../../../../language/en-GB/mod_example.ini',
 		module_language_gb_sys_src: './../../../../language/en-GB/mod_example.sys.ini',
-		module_language_gb_dest: './pkg/modules/mod_example/languages/en-GB/',
+		module_language_gb_dest: './pkg/modules/mod_example/language/en-GB/',
 
 		plugin_webservices_language_gb_ini_src: './../../../../administrator/language/en-GB/plg_webservices_example.ini',
 		plugin_webservices_language_gb_sys_src: './../../../../administrator/language/en-GB/plg_webservices_example.sys.ini',
