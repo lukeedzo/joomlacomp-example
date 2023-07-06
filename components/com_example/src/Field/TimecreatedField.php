@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @version    CVS: 1.0.0
  * @package    Com_Example
@@ -50,7 +51,7 @@ class TimecreatedField extends FormField
             $html[] = '<input type="hidden" name="' . $this->name . '" value="' . $time_created . '" />';
         }
 
-        $hidden = (boolean) $this->element['hidden'];
+        $hidden = (bool) $this->element['hidden'];
 
         if ($hidden == null || !$hidden) {
             $jdate = new Date($time_created);
